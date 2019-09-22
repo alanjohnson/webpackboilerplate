@@ -1,23 +1,31 @@
 {
-  "name": "spaceinvaders",
+  "name": "myboilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --mode development --open",
+    "build": "webpack --config webpack.config.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Alan Johnson",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
     "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.6.0",
     "babel-loader": "^8.0.6",
     "nodemon": "^1.19.2",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.0.0"
   }
 }

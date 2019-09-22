@@ -1,1 +1,1 @@
-console.log('Hello Webpack Project.');
+console.log(`Hello Webpack Project. gggg`);

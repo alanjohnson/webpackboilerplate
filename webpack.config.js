@@ -7,6 +7,10 @@ module.exports = {
         test: /\.(js)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
+      },
+      { // for css
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       }
     ]
   },
@@ -23,5 +27,8 @@ module.exports = {
   devServer: {
     contentBase: './public',
     watchContentBase: true
-  }
+  },
+  plugins: [],
+  // watch: true, // watch for file changes not needed since using
+  devtool: 'source-map' // detailed meta data for debugging
 };
